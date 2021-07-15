@@ -13,10 +13,10 @@
 
 <body>
   <div id="background">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
-      <path fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
+    <svg id="main-bg" xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
+      <path  fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="146" height="145">
+    <svg id="circles" xmlns="http://www.w3.org/2000/svg" width="146" height="145">
       <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
         <circle cx="63" cy="82" r="62.5" />
         <circle cx="105" cy="41" r="40.5" />
@@ -25,15 +25,15 @@
   </div>
   <h1 id="main-title">Simple, traffic-basesd pricing</h1>
   <h2 id="subtitle">Sign-up for our 30-day trial. No credit card required.</h2>
-  <div id="cointainer">
+  <div id="container">
     <h3 id="pageviews-counter">100k pageviews</h3>
     <div id="price-container">
       <h2 id="currency">$</h2>
       <h2 id="price">16.00</h2>
-      <h2 id="time-interval">/ Month</h2>
+      <h2 id="time-interval">/ month</h2>
     </div>
     <div id="slide-container">
-      <input type="range" min="1" max="100" value="50" id="price-range" />
+      <input type="range" min="1" max="100" value="50" id="price-range" src="./images/icon-slider.svg" />
     </div>
     <div id="switch-container">
       <p>Monthly Billing</p>
@@ -47,26 +47,26 @@
       </p>
     </div>
     <div id="benefits-info">
-      <div>
+      <div class="benefits">
         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
           <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
         </svg>
         <p>Unlimited Websites</p>
       </div>
-      <div>
+      <div class="benefits">
         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
           <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
         </svg>
         <p>100% data ownership</p>
       </div>
-      <div>
+      <div class="benefits">
         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
           <path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
         </svg>
         <p>Email reports</p>
       </div>
     </div>
-    <button type="button">Start my trial</button>
+    <button type="button" id="btn">Start my trial</button>
 
   </div>
 

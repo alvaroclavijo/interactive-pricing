@@ -1,0 +1,178 @@
+/*fonts*/
+@font-face {
+    font-family:"Manrope-Regular";
+    src: url(../fonts/Manrope-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:"Manrope-Bold";
+    src: url(../fonts/Manrope-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family:"Manrope-Bolder";
+    src: url(../fonts/Manrope-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+    font-family:"Manrope-Lighter";
+    src: url(../fonts/Manrope-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+    font-family:"Manrope-Light";
+    src: url(../fonts/Manrope-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family:"Manrope-Medium";
+    src: url(../fonts/Manrope-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family:"Manrope-Semibold";
+    src: url(../fonts/Manrope-SemiBold.ttf) format('truetype');
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#background{
+    width: 100%;
+    height: 100%;
+}
+#main-bg{
+    width: 100%;
+    height: auto;
+}
+#circles{
+    position: absolute;
+    top: 70px;
+    left: 45%;
+}
+#main-title{
+    font-family: "Manrope-Bold";
+    font-size: 25px;
+    position: absolute;
+    top: 100px;
+    left: 39%;
+    color:#2B3155;
+}
+#subtitle{
+    font-family: "Manrope-Light";
+    font-size: 15px;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    color: #A1A8BA;
+}
+#container{
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: -170px;
+    left: 34%;
+    box-shadow:0 4.5px 4.5px rgba(104, 104, 104, 0.12);
+}
+#pageviews-counter{
+    font-family: "Manrope-Light";
+    color: #A1A8BA;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding-top: 50px;
+    padding-left: 50px;
+    
+}
+#price-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 32px;
+    right: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#currency,#price{
+    font-family: "Manrope-Bold";
+    font-size: 40px;
+    color:#2B3155 ;
+}
+#time-interval{
+    font-family: "Manrope-Light";
+    font-size: 14px;
+    color: #A1A8BA;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+#price-range{
+    width: 80%;
+    height: 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background: hsl(174, 77%, 80%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;    
+}
+#price-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #24AEA1;
+    background-image: url('../images/icon-slider.svg');
+    background-repeat: no-repeat, no-repeat;
+    cursor: pointer;
+}
+
+#switch-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 150px;
+
+}
+
+#switch-container p{
+    font-family: "Manrope-Bold";
+    font-size: 12px;
+    color: #A1A8BA;
+}
+#switch-container h4{
+    font-family: "Manrope-Regular";
+    font-size: 10px;
+    color: hsl(15, 100%, 70%);
+    background-color: hsla(15, 91%, 92%, 0.747);
+    border-radius: 5.5px;
+    padding: 5.5px;
+    letter-spacing: 0.5px;
+}
+#benefits-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.benefits{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#benefits-info p{
+    font-family: "Manrope-Bold";
+    font-size: 12px;
+    color: #A1A8BA;
+}
+#btn{
+    position: absolute;
+    top: 260px;
+    left: 330px;
+}
+
