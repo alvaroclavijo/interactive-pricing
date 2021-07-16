@@ -68,7 +68,7 @@
     background-color: white;
     border-radius: 10px;
     position: relative;
-    top: -170px;
+    top: -200px;
     left: 34%;
     box-shadow:0 4.5px 4.5px rgba(104, 104, 104, 0.12);
 }
@@ -103,9 +103,12 @@
     margin-left: 5px;
     letter-spacing: 1px;
 }
+#slide-container{
+    color: red;
+}
 #price-range{
     width: 80%;
-    height: 10px;
+    height: 8px;
     margin-top: 40px;
     margin-left: 50px;
     -webkit-appearance: none;
@@ -119,11 +122,12 @@
 #price-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #24AEA1;
     background-image: url('../images/icon-slider.svg');
+    background-position: center;
     background-repeat: no-repeat, no-repeat;
     cursor: pointer;
 }
@@ -153,6 +157,65 @@
     padding: 5.5px;
     letter-spacing: 0.5px;
 }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:hsl(174, 77%, 80%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(174, 77%, 80%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 #benefits-info{
     display: flex;
     flex-direction: column;
@@ -169,10 +232,18 @@
     font-family: "Manrope-Bold";
     font-size: 12px;
     color: #A1A8BA;
+    margin-left: 15px;
 }
 #btn{
     position: absolute;
+    font-family: "Manrope-Bold";
+    font-size: 12px;
     top: 260px;
-    left: 330px;
+    left: 290px;
+    width: 150px;
+    height: 45px;
+    color: white;
+    background-color: #293356;
+    border-radius: 40px;
+    cursor: pointer;
 }
-
