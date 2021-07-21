@@ -11,10 +11,10 @@
 
 </head>
 
-<body>
+<body onload="calculatePrice()">
   <div id="background">
     <svg id="main-bg" xmlns="http://www.w3.org/2000/svg" width="1440" height="449">
-      <path  fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
+      <path fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z" />
     </svg>
     <svg id="circles" xmlns="http://www.w3.org/2000/svg" width="146" height="145">
       <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
@@ -28,17 +28,19 @@
   <div id="container">
     <h3 id="pageviews-counter">100k pageviews</h3>
     <div id="price-container">
-      <h2 id="currency">$</h2>
-      <h2 id="price">16.00</h2>
+      <h2 id="price">$16.00</h2>
       <h2 id="time-interval">/ month</h2>
     </div>
     <div id="slide-container">
-      <input type="range" min="8" max="30" step="1" value="50%" text-value="50" prefix="$" id="price-range" src="./images/icon-slider.svg" />
+      <div id="progressBar"></div>
+      <input type="range" oninput="calculatePrice()" min="5" max="20" step="5" ValueAsNumber="16" prefix="$"
+        id="price-range" src="./images/icon-slider.svg" />
+
     </div>
     <div id="switch-container">
       <p>Monthly Billing</p>
       <label class="switch">
-        <input type="checkbox">
+        <input id="checkbox" type="checkbox">
         <span class="slider round"></span>
       </label>
       <p>Yearly Billing</p>
@@ -69,14 +71,8 @@
     <button type="button" id="btn">Start my trial</button>
 
   </div>
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
 
-
-
-
+  <script type="text/javascript" src="./js/interactive-pricing.js"></script>
 </body>
 
 </html>
