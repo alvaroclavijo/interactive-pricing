@@ -265,3 +265,247 @@
     border-radius: 40px;
     cursor: pointer;
 }
+
+/*mobile design*/
+
+@media (max-width: 376px){
+
+    #background{
+        width: 100%;
+        height: 100%;
+    }
+    #main-bg{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 0px;
+        left: 23%;
+    }
+    #circles{
+        position: absolute;
+        top: 68px;
+        left: 54%;
+    }
+    #main-title{
+        width: 80%;
+        font-family: "Manrope-Bold";
+        font-size: 18px;
+        position: absolute;
+        top: 110px;
+        left: 40%;
+        color:#2B3155;
+    }
+    #subtitle{
+        font-family: "Manrope-Light";
+        font-size: 13px;
+        position: absolute;
+        top: 145px;
+        left: 53%;
+        color: #A1A8BA;
+        text-align: center;
+    }
+    #container{
+        width: 300px;
+        height: 450px;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 260px;
+        left: 34%;
+        box-shadow:0 4.5px 4.5px rgba(104, 104, 104, 0.12);
+    }
+    #pageviews-counter{
+        font-family: "Manrope-Light";
+        color: #A1A8BA;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        padding-top: 30px;
+        padding-left: 95px;
+        
+    }
+    #price-container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 32px;
+        right: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    #currency,#price{
+        font-family: "Manrope-Bold";
+        font-size: 30px;
+        color:#2B3155 ;
+    }
+    #time-interval{
+        font-family: "Manrope-Light";
+        font-size: 14px;
+        color: #A1A8BA;
+        margin-left: 5px;
+        letter-spacing: 1px;
+    }
+    
+    #price-range{
+        width: 100%;
+        height: 8px;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        background: #e8edf8;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;    
+    }
+    #price-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #24AEA1;    
+        background-image: url('../images/icon-slider.svg');
+        background-position: center;
+        background-repeat: no-repeat, no-repeat;
+        cursor: pointer;
+    }
+    #slide-container{
+        position: relative;
+        width: 80%;
+        margin-top: 30px;
+        margin-left:35px ;
+    }
+    #progressBar{
+        width: 40%;
+        height: 8px;
+        background: #24AEA1;
+        border-radius: 3px;
+        position: absolute;
+        top: 7px;
+    
+    }
+    #price-range::-moz-range-progress{
+        background:#24AEA1 ;
+    }
+    
+    #switch-container{
+        width: 91%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 12px;   
+    }
+    
+    #switch-container p{
+        font-family: "Manrope-Bold";
+        font-size: 12px;
+        color: #A1A8BA;
+    }
+    #switch-container h4{
+        font-family: "Manrope-Regular";
+        font-size: 10px;
+        color: hsl(15, 100%, 70%);
+        background-color: hsla(15, 91%, 92%, 0.747);
+        border-radius: 5.5px;
+        padding: 5.5px;
+        letter-spacing: 0.5px;
+        width: 41px;
+        height: 24px;
+        margin-left: 0px;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 35px;
+        height: 20px;
+      }
+      
+      .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color:hsl(174, 77%, 80%);
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px hsl(174, 77%, 80%);
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(17px);
+        -ms-transform: translateX(17px);
+        transform: translateX(17px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    #benefits-info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .benefits{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    
+    #benefits-info p{
+        font-family: "Manrope-Bold";
+        font-size: 12px;
+        color: #A1A8BA;
+        margin-left: 10px;
+    }
+    #btn{
+        position: absolute;
+        font-family: "Manrope-Bold";
+        font-size: 12px;
+        top: 372px;
+        left: 75px;
+        width: 150px;
+        height: 45px;
+        color: white;
+        background-color: #293356;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+}
