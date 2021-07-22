@@ -279,12 +279,12 @@
         height: 300px;
         position: absolute;
         top: 0px;
-        left: 23%;
+        left: 0%;
     }
     #circles{
         position: absolute;
         top: 68px;
-        left: 54%;
+        left: 33%;
     }
     #main-title{
         width: 80%;
@@ -292,15 +292,16 @@
         font-size: 18px;
         position: absolute;
         top: 110px;
-        left: 40%;
+        left: 16%;
         color:#2B3155;
     }
     #subtitle{
+        width: 45%;
         font-family: "Manrope-Light";
         font-size: 13px;
         position: absolute;
         top: 145px;
-        left: 53%;
+        left: 30%;
         color: #A1A8BA;
         text-align: center;
     }
@@ -311,7 +312,7 @@
         border-radius: 10px;
         position: relative;
         top: 260px;
-        left: 34%;
+        left: 12%;
         box-shadow:0 4.5px 4.5px rgba(104, 104, 104, 0.12);
     }
     #pageviews-counter{
